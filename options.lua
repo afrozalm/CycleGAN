@@ -36,7 +36,7 @@ local opt_train = {
    checkpoints_dir = './checkpoints', -- models are saved here
    cudnn = 1,                         -- set to 0 to not use cudnn
    which_model_netD = 'basic',        -- selects model to use for netD
-   which_model_netG = 'resnet_6blocks',   -- selects model to use for netG
+   which_model_netG = 'unet128',   -- selects model to use for netG
    norm = 'instance',             -- batch or instance normalization
    n_layers_D = 3,                -- only used if which_model_netD=='n_layers'
    content_loss = 'pixel',        -- content loss type: pixel, vgg
