@@ -80,10 +80,12 @@ model:Initialize(opt)
 
 local pathsA = {} -- paths to images A tested on
 local pathsB = {} -- paths to images B tested on
-local web_dir = paths.concat(opt.results_dir, opt.name .. '/' .. opt.which_epoch .. '_' .. opt.phase)
+local web_dir = paths.concat(opt.results_dir .. '/' .. opt.name .. '/' .. opt.which_epoch .. '_' .. opt.phase)
 paths.mkdir(web_dir)
-local image_dir = paths.concat(web_dir, 'images')
+print(opt.results_dir, web_dir)
+local image_dir = paths.concat(web_dir .. '/' .. 'images')
 paths.mkdir(image_dir)
+print('created image directory : ', image_dir)
 s1 = opt.fineSize
 s2 = opt.fineSize / opt.aspect_ratio
 
