@@ -4,4 +4,6 @@
 *.jpg
 trainA/
 trainB/
+testA/
+testB/
 checkpoints/
